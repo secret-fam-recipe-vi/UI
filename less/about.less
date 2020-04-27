@@ -1,0 +1,71 @@
+.body-container{
+    width: 95%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    @media @mobile{
+        font-size: 16px;
+    }
+
+.nav-bar{
+    color: @main-font-color;
+    .flexRow(flex-end, center);
+    // text-align: right;
+    width: 100%;
+    // display: flex;
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: auto;
+    // border: red 3px solid;
+    // align-content: flex-end;
+    // justify-content: center;
+    margin-bottom: 15px;
+    .nav-item{
+        padding: 5px;
+        margin-left: 5px;
+        // justify-self: space-between;
+        // border: lightblue 3px solid;
+    }
+    a{
+        text-decoration: none;
+        color: @main-font-color;
+        
+    }
+
+    #log-in{
+        color: red;
+    }
+}
+
+img{
+    height: 200px;
+    width: auto;
+}
+
+h3{
+    .centermargin();
+    text-align: center;
+}
+.team{
+    // border: 1px solid red;
+    width: 100%;
+    .flexRow(space-between, center);
+    flex-wrap: wrap;
+
+
+    .team-member{
+        width: 200px;
+        height: auto;
+        .flexCol(space-between, center);
+        font-size: 32px;
+        a{
+        color: @main-font-color;
+        text-decoration: none;
+        text-align: center;
+        }
+    }
+
+    @media @mobile{
+        .flexCol(space-between, center);
+    }
+}
+}

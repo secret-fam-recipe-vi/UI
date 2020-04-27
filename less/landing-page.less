@@ -1,0 +1,128 @@
+.landing{
+    border: 5px dotted pink;
+    a{
+        text-decoration: none;
+        color: @main-font-color;
+    }
+    .centermargin();
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px;
+    width: 80%;
+
+//navBar    
+    .nav-bar{
+
+        // background-color: rgb(204, 203, 203);
+
+        @media @phone{
+            font-size: small;
+            justify-content: space-evenly;
+        }
+        color: @main-font-color;
+        .flexRow(flex-end, center);
+        // text-align: right;
+        width: 100%;
+        // display: flex;
+        font-size: 16px;
+        margin-right: 0;
+        margin-left: auto;
+        // border: red 3px solid;
+        // align-content: flex-end;
+        // justify-content: center;
+        margin-bottom: 15px;
+        .nav-item{
+            padding: 5px;
+            margin-left: 5px;
+            // justify-self: space-between;
+            // border: lightblue 3px solid;
+        }
+        a{
+            text-decoration: none;
+            color: @main-font-color;
+            
+        }
+        #login{
+            @media @phone{
+                display: none;
+            }
+        }
+        #log-in{
+            color: red;
+        }
+    }
+//End of navBar
+
+//Header start
+.header{
+
+h1{
+
+    background-image: url("../img/front\ page\ cookbook.jpg");
+    font-size: 100px;
+    @media @phone{
+        font-size: 40px;
+    }
+}
+
+
+}
+
+//End of header
+
+//start of body
+.main-content{
+    .centermargin();
+    text-align: center;
+    .flexCol(space-evenly, center);
+
+    .recipe-header{
+        #cow{
+            background-image: url('../img/cow\ clipart.png');
+            height: auto;
+        }
+
+        margin-top: 25px;
+    }
+
+    #beef-section{
+        .flexRow(space-evenly, center);
+        border: 2px dashed rgb(134, 130, 130);
+
+    }
+
+    #pork-section{
+        .flexRow(space-evenly, center);
+        border: 2px dashed rgb(134, 130, 130);
+
+    }
+
+    #chicken-section{
+        .flexRow(space-evenly, center);
+        border: 2px dashed rgb(134, 130, 130);
+
+    }
+}
+
+//end of body
+
+footer{
+    display: block;
+    // position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    @media @phone{
+        
+    }
+
+
+    #log-in{
+        color: red;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+}
