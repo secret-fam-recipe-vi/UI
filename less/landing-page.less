@@ -1,5 +1,20 @@
 .landing{
-    border: 5px dotted pink;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+background: #f3e2c7; /* Old browsers */
+background: -moz-linear-gradient(top,  #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+
+    // border: 5px dotted pink;
+    @media @phone{
+        width: 490px;
+    }
+
+    @media @tablet{
+        width: 80%;
+    }
     a{
         text-decoration: none;
         color: @main-font-color;
@@ -8,7 +23,7 @@
     margin-top: 1px;
     margin-bottom: 1px;
     padding: 1px;
-    width: 80%;
+    width: 95%;
 
 //navBar    
     .nav-bar{
@@ -57,11 +72,17 @@
 .header{
 
 h1{
-
+    text-align: center;
     background-image: url("../img/front\ page\ cookbook.jpg");
     font-size: 100px;
     @media @phone{
         font-size: 40px;
+        text-align: center;
+        background-image: none;
+    }
+
+    @media @tablet{
+        font-size: 54px;
     }
 }
 
@@ -89,18 +110,90 @@ h1{
         .flexRow(space-evenly, center);
         border: 2px dashed rgb(134, 130, 130);
 
+        @media @phone{
+            .flexCol(space-between, center);
+            width: 350px;
+            height: auto;
+            .centermargin();
+            #beef2{
+                display: none;
+            }
+            #beef3{
+                display: none;
+            }
+
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }
+
+        @media @tablet{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            #beef3{
+                display: none;
+            }
+        }
     }
 
     #pork-section{
         .flexRow(space-evenly, center);
         border: 2px dashed rgb(134, 130, 130);
 
+
+        @media @phone{
+            .flexCol(space-between, center);
+            width: 350px;
+            height: auto;
+            .centermargin();
+            #pork2{
+                display: none;
+            }
+            #pork3{
+                display: none;
+            }
+            img{
+                height: auto;
+                width: 300px;
+            }
+        }
+
+        @media @tablet{
+            width: 400px;
+            height: auto;
+        }
     }
 
     #chicken-section{
         .flexRow(space-evenly, center);
         border: 2px dashed rgb(134, 130, 130);
-
+        width: 350px;
+        height: auto;
+        .centermargin();
+        @media @phone{
+            .flexCol(space-between, center);
+            #chicken2{
+                display: none;
+            }
+            #chicken3{
+                display: none;
+            }
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }
+        @media @tablet{
+            .flexCol(space-between, center);
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
     }
 }
 
@@ -113,7 +206,7 @@ footer{
     margin-top: 30px;
     font-size: 24px;
     @media @phone{
-        
+        font-size: 24px;
     }
 
 
@@ -125,4 +218,3 @@ footer{
     }
 }
 
-}
