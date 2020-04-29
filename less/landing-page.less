@@ -109,6 +109,15 @@ h1{
     #beef-section{
         .flexRow(space-evenly, center);
         border: 2px dashed rgb(134, 130, 130);
+        p{
+            display: block;
+        }
+        #beef3{
+            @media only screen and (max-width: 800px){
+                border: 3px solid red;
+                display: none;
+            }
+        }
 
         @media @phone{
             .flexCol(space-between, center);
@@ -143,7 +152,6 @@ h1{
         .flexRow(space-evenly, center);
         border: 2px dashed rgb(134, 130, 130);
 
-
         @media @phone{
             .flexCol(space-between, center);
             width: 350px;
@@ -161,7 +169,14 @@ h1{
             }
         }
 
-        @media @tablet{
+
+        #pork3{
+            @media only screen and (max-width: 800px){
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 800px){
             width: 400px;
             height: auto;
         }
@@ -169,11 +184,13 @@ h1{
 
     #chicken-section{
         .flexRow(space-evenly, center);
+        width: 100%;
         border: 2px dashed rgb(134, 130, 130);
-        width: 350px;
-        height: auto;
         .centermargin();
+
         @media @phone{
+            width: 350px;
+            height: auto;
             .flexCol(space-between, center);
             #chicken2{
                 display: none;
@@ -182,15 +199,18 @@ h1{
                 display: none;
             }
             img{
-                width: 300px;
                 height: auto;
             }
         }
-        @media @tablet{
-            .flexCol(space-between, center);
+        @media only screen and (max-width: 800px){
             img{
-                width: 200px;
+                // width: 400px;
+                .centermargin();
+                width: 48%;
                 height: auto;
+            }
+            #chicken3{
+                display: none;
             }
         }
     }
