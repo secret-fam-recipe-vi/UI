@@ -33,46 +33,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
     }
 
 //navBar    
-    .nav-bar{
 
-        // background-color: rgb(204, 203, 203);
+.nav-bar{
 
-        @media @phone{
-            font-size: small;
-            justify-content: space-evenly;
-        }
+    // background-color: rgb(204, 203, 203);
+
+    @media @phone{
+        font-size: small;
+        justify-content: space-evenly;
+    }
+    color: @main-font-color;
+    .flexRow(flex-end, center);
+    // text-align: right;
+    width: 100%;
+    // display: flex;
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: auto;
+    // border: red 3px solid;
+    // align-content: flex-end;
+    // justify-content: center;
+    margin-bottom: 15px;
+    .nav-item{
+        padding: 5px;
+        margin-left: 5px;
+        // justify-self: space-between;
+        // border: lightblue 3px solid;
+    }
+    a{
+        text-decoration: none;
         color: @main-font-color;
-        .flexRow(flex-end, center);
-        // text-align: right;
-        width: 100%;
-        // display: flex;
-        font-size: 16px;
-        margin-right: 0;
-        margin-left: auto;
-        // border: red 3px solid;
-        // align-content: flex-end;
-        // justify-content: center;
-        margin-bottom: 15px;
-        .nav-item{
-            padding: 5px;
-            margin-left: 5px;
-            // justify-self: space-between;
-            // border: lightblue 3px solid;
-        }
-        a{
-            text-decoration: none;
-            color: @main-font-color;
-            
-        }
-        #login{
-            @media @phone{
-                display: none;
-            }
-        }
-        #log-in{
-            color: red;
+        
+    }
+    #login{
+        @media @phone{
+            display: none;
         }
     }
+    #log-in{
+        color: red;
+    }
+}
 //End of navBar
 
 //Header start
