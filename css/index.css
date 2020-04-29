@@ -264,14 +264,12 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  border: 2px dashed #868282;
 }
 .landing .main-content #beef-section p {
   display: block;
 }
 @media only screen and (max-width: 800px) {
   .landing .main-content #beef-section #beef3 {
-    border: 3px solid red;
     display: none;
   }
 }
@@ -310,7 +308,6 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  border: 2px dashed #868282;
 }
 @media only screen and (max-width:500px) {
   .landing .main-content #pork-section {
@@ -342,7 +339,12 @@ p {
 @media only screen and (max-width: 800px) {
   .landing .main-content #pork-section {
     width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .landing .main-content #chicken-section {
@@ -350,7 +352,6 @@ p {
   justify-content: space-evenly;
   align-content: center;
   width: 100%;
-  border: 2px dashed #868282;
   margin-left: auto;
   margin-right: auto;
 }
@@ -395,8 +396,17 @@ footer {
     font-size: 24px;
   }
 }
-footer #log-in {
+footer .btn {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 40%;
+  background-color: #7cff01;
   color: red;
+}
+footer .btn:hover {
+  background-color: red;
+  color: #7cff01;
+  cursor: pointer;
 }
 footer a {
   text-decoration: none;
