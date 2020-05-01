@@ -1,0 +1,250 @@
+.landing{
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+background: #f3e2c7; /* Old browsers */
+background: -moz-linear-gradient(top,  #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+
+    // border: 5px dotted pink;
+    @media @phone{
+        width: 490px;
+    }
+
+    @media @tablet{
+        width: 80%;
+    }
+    a{
+        text-decoration: none;
+        color: @main-font-color;
+    }
+    .centermargin();
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px;
+    width: 95%;
+
+    img{
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+//navBar    
+
+.nav-bar{
+
+    // background-color: rgb(204, 203, 203);
+
+    @media @phone{
+        font-size: small;
+        justify-content: space-evenly;
+    }
+    color: @main-font-color;
+    .flexRow(flex-end, center);
+    // text-align: right;
+    width: 100%;
+    // display: flex;
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: auto;
+    // border: red 3px solid;
+    // align-content: flex-end;
+    // justify-content: center;
+    margin-bottom: 15px;
+    .nav-item{
+        padding: 5px;
+        margin-left: 5px;
+        // justify-self: space-between;
+        // border: lightblue 3px solid;
+    }
+    a{
+        text-decoration: none;
+        color: @main-font-color;
+        
+    }
+    #login{
+        @media @phone{
+            display: none;
+        }
+    }
+    #log-in{
+        color: red;
+    }
+}
+//End of navBar
+
+//Header start
+.header{
+
+h1{
+    text-align: center;
+    background-image: url("../img/front\ page\ cookbook.jpg");
+    font-size: 100px;
+    @media @phone{
+        font-size: 40px;
+        text-align: center;
+        background-image: none;
+    }
+
+    @media @tablet{
+        font-size: 54px;
+    }
+}
+
+
+}
+
+//End of header
+
+//start of body
+.main-content{
+    .centermargin();
+    text-align: center;
+    .flexCol(space-evenly, center);
+
+    .recipe-header{
+        #cow{
+            background-image: url('../img/cow\ clipart.png');
+            height: auto;
+        }
+
+        margin-top: 25px;
+    }
+
+    #beef-section{
+        .flexRow(space-evenly, center);
+        // border: 2px dashed rgb(134, 130, 130);
+        p{
+            display: block;
+        }
+        #beef3{
+            @media only screen and (max-width: 800px){
+                // border: 3px solid red;
+                display: none;
+            }
+        }
+
+        @media @phone{
+            .flexCol(space-between, center);
+            width: 350px;
+            height: auto;
+            .centermargin();
+            #beef2{
+                display: none;
+            }
+            #beef3{
+                display: none;
+            }
+
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }
+
+        @media @tablet{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            #beef3{
+                display: none;
+            }
+        }
+    }
+
+    #pork-section{
+        .flexRow(space-evenly, center);
+        // border: 2px dashed rgb(134, 130, 130);
+
+        @media @phone{
+            .flexCol(space-between, center);
+            width: 350px;
+            height: auto;
+            .centermargin();
+            #pork2{
+                display: none;
+            }
+            #pork3{
+                display: none;
+            }
+            img{
+                height: auto;
+                width: 300px;
+            }
+        }
+
+
+        #pork3{
+            @media only screen and (max-width: 800px){
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 800px){
+            width: 400px;
+            .flexRow(space-between, center);
+            height: auto;
+            .centermargin();
+        }
+    }
+
+    #chicken-section{
+        .flexRow(space-evenly, center);
+        width: 100%;
+        // border: 2px dashed rgb(134, 130, 130);
+        .centermargin();
+
+        @media @phone{
+            width: 350px;
+            height: auto;
+            .flexCol(space-between, center);
+            #chicken2{
+                display: none;
+            }
+            #chicken3{
+                display: none;
+            }
+            img{
+                height: auto;
+            }
+        }
+        @media only screen and (max-width: 800px){
+            img{
+                // width: 400px;
+                .centermargin();
+                width: 48%;
+                height: auto;
+            }
+            #chicken3{
+                display: none;
+            }
+        }
+    }
+    }
+}
+
+//end of body
+
+footer{
+    display: block;
+    // position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    @media @phone{
+        font-size: 24px;
+    }
+
+    .btn{
+        .button(1px solid black, 10px, rgb(124, 255, 1), red)
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
